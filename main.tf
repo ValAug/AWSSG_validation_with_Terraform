@@ -1,16 +1,16 @@
-# --- main/root ---
+# --- main/nt ---
 resource "aws_vpc" "vpc_validation" {
   cidr_block = "10.0.0.0/16"
 }
 
 resource "aws_security_group" "sg_validation" {
-  name        = "validation_test"
-  vpc_id      = aws_vpc.vpc_validation.id
+  name   = "validation_test"
+  vpc_id = aws_vpc.vpc_validation.id
 
   ingress {
     description = "allow only HTTPS connection"
-    from_port   = 443
-    to_port     = 443
+    from_port   = var.from
+    to_port     = var.to
     protocol    = "tcp"
     cidr_blocks = [aws_vpc.vpc_validation.cidr_block]
   }
