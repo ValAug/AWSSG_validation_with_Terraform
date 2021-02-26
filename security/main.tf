@@ -17,9 +17,9 @@ resource "aws_security_group" "sg_validation" {
 
   ingress {
 
-    from_port   = 22
-    to_port     = 22
-    protocol    = "tcp"
+    from_port   = var.ssh_from
+    to_port     = var.ssh_to
+    protocol    = var.prot
     cidr_blocks = [var.confidential_ip]
   }
 

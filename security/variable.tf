@@ -1,6 +1,6 @@
 # ---variable/sec ---
 variable "https_from" {
-    description = "map sg validation test"
+  description = "map sg validation test"
 
   validation {
     condition     = var.https_from == 443
@@ -15,6 +15,27 @@ variable "https_to" {
   }
 }
 
+variable "ssh_from" {
+  description = "map sg validation test"
+
+  validation {
+    condition     = var.ssh_from == 22
+    error_message = "The SSH value must be 22."
+  }
+}
+variable "ssh_to" {
+
+  validation {
+    condition     = var.ssh_to == 22
+    error_message = "The SSH port value must be 22."
+  }
+}
+variable "confidential_ip" {
+  validation {
+    condition     = var.confidential_ip != "0.0.0.0/0"
+    error_message = "The confidential_ip should not be open to the world."
+  }
+}
 variable "prot" {
 
   validation {
@@ -23,9 +44,3 @@ variable "prot" {
   }
 }
 
-variable "confidential_ip" {
-    validation {
-    condition     = var.confidential_ip != "0.0.0.0/0"
-    error_message = "The confidential_ip should not be open to the world."
-  }
-}
