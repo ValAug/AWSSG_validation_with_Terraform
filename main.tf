@@ -8,4 +8,5 @@ module "vpc" {
   ssh_to          = 22
   prot            = "tcp"
   confidential_ip = var.confidential_ip
+  cidr = var.cidr
 }

@@ -1,6 +1,6 @@
 # --- main/sec ---
 resource "aws_vpc" "vpc_validation" {
-  cidr_block = "10.0.0.0/16"
+  cidr_block = var.cidr
 }
 
 resource "aws_security_group" "sg_validation" {

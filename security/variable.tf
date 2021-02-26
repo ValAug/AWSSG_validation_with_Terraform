@@ -1,4 +1,11 @@
 # ---variable/sec ---
+variable "cidr" {
+    
+    validation {
+    condition     = var.cidr == "10.0.0.0/16"
+    error_message = "The vpc cidr_block should not be smaller than cidr requirements."
+  }
+}
 variable "https_from" {
   description = "map sg validation test"
 
