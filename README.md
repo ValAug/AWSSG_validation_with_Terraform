@@ -46,8 +46,8 @@ Shows how to use AWS with Terraform to accomplish the following tasks:
 * cd to AWS_SG_validation_with_Terraform folder
 * terraform init
 * terraform validate
-* terraform plan
 * test changing AWS SG configuration and see result
+* terraform plan
 * terraform apply
 * Alternate command : terraform apply -auto-approve
 * terraform destroy
