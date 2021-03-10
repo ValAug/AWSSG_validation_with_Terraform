@@ -47,12 +47,12 @@ Shows how to use AWS with Terraform to accomplish the following tasks:
 
 # How to run this code
 
-* Clone this repo
-* cd to AWS_SG_validation_with_Terraform folder
-* terraform init
-* terraform validate
-* test changing AWS SG configuration and see result
-* terraform plan
+* clone this Git repo
+* cd to the the directory AWS_SG_validation_with_Terraform 
+* use terraform init command to initialize the Terraform working directory and to download plugins for a provider (aws)
+* terraform validate command will validate the code before actual deployment
+* test changing AWS SG configuration on the main-root file and see result
+* terraform plan command will show the execution code before making the actual deployment
 * terraform apply
 * Alternate command : terraform apply -auto-approve
 * terraform destroy
