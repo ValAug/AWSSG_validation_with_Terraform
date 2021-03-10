@@ -1,3 +1,8 @@
+<!-- retro visitor counter -->
+<p align="center"> 
+  <img src="https://profile-counter.glitch.me/ValAug/count.svg" />
+</p>
+
 # AWSSG_validation_with_Terraform
 
 ###### Cloud - :cloud:
