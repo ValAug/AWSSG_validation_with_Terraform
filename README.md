@@ -12,7 +12,7 @@
 ![Terraform](https://img.shields.io/badge/-Terraform-000000?style=flat&logo=Terraform)
 
 # AWS SG and architecture diagram 
-![alt text](https://github.com/ValAug/Advance_AWSVPC_Terraform/blob/master/sg_diagram.png)
+![alt text](https://github.com/ValAug/AWSSG_validation_with_Terraform/blob/master/sg_diagrama.png)
 
 ## Note
 
