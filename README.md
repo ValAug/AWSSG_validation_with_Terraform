@@ -73,7 +73,7 @@ terraform destroy --auto-approve
 
 - clone this Git repo
 - cd to the the directory AWS_SG_validation_with_Terraform
-- use terraform init command to initialize the Terraform working directory and to download plugins for a provider (aws)
+- use terraform __init__ command to initialize the Terraform working directory and to download plugins for a provider (aws)
 - terraform validate command will validate the code before actual deployment
 - terraform plan command will show the execution code before making the actual deployment
 - terraform apply
