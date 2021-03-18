@@ -47,14 +47,37 @@ Shows how to use AWS with Terraform to accomplish the following tasks:
 
 # How to run this code
 
-* clone this Git repo
-* cd to the the directory AWS_SG_validation_with_Terraform 
-* use terraform init command to initialize the Terraform working directory and to download plugins for a provider (aws)
-* terraform validate command will validate the code before actual deployment
-* test changing AWS SG configuration on the main-root file and see result
-* terraform plan command will show the execution code before making the actual deployment
-* terraform apply
-* Alternate command : terraform apply -auto-approve
-* terraform destroy
-* Alternate command : terraform destroy -auto-approve
-* terraform fmt # A way to format the terraform code
+- [How to run this code](#how-to-run-this-code)
+  - [Quick Start](#quick-start)
+  - [Quick Destroy](#quick-destroy)
+  - [Notes](#notes)
+
+## Quick Start
+
+It will deploy to the account setup for the aws cli called 'default'
+
+```bash
+cd terraform
+terraform init
+terraform validate
+terraform apply --auto-approve
+```
+
+## Quick Destroy
+
+```bash
+terraform destroy --auto-approve
+```
+
+## Notes
+
+- clone this Git repo
+- cd to the the directory AWS_SG_validation_with_Terraform
+- use terraform init command to initialize the Terraform working directory and to download plugins for a provider (aws)
+- terraform validate command will validate the code before actual deployment
+- terraform plan command will show the execution code before making the actual deployment
+- terraform apply
+- Alternate command : terraform apply -auto-approve
+- terraform destroy
+- Alternate command : terraform destroy -auto-approve
+- terraform fmt -recursive # A way to format the terraform code
